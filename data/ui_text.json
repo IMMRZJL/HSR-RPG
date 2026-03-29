@@ -1,0 +1,25 @@
+{
+  "title": "Sydney to Wollongong High-Speed Rail Construction Simulator",
+  "buttons": {
+    "start": "Start New Project",
+    "confirm_stream": "Confirm Stream",
+    "continue_planning": "Continue to Planning",
+    "next_quarter": "Next Quarter",
+    "continue": "Continue",
+    "restart": "Return to Main Menu"
+  },
+  "labels": {
+    "budget": "Budget",
+    "spent": "Spent",
+    "remaining": "Remaining",
+    "team_occupancy": "Team/Resource Occupancy",
+    "critical_path": "Critical Path Snapshot",
+    "float": "Float/Slack Explanation",
+    "route": "Route Progress"
+  },
+  "help": {
+    "planning": "Drag tasks into quarter cells. Tasks with unsatisfied prerequisites cannot be placed.",
+    "critical_path": "Critical path tasks are those on the longest dependency chain. Delays there are likely to delay completion.",
+    "float": "Float (slack) is time a task can slip without moving final completion."
+  }
+}
