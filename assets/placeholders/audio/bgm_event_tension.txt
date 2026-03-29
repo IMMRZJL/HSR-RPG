@@ -1,0 +1,1 @@
+Placeholder reference for bgm_event_tension.txt. Generate externally.

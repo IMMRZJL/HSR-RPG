@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sydney to Wollongong High-Speed Rail Construction Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h1 id="game-title">Sydney to Wollongong High-Speed Rail Construction Simulator</h1>
+    <div id="quarter-display">Year 1 • Q1</div>
+  </header>
+
+  <main>
+    <section id="screen-main-menu" class="screen active" data-bg="assets/placeholders/backgrounds/main_menu_bg.svg">
+      <div class="panel">
+        <h2>Main Menu</h2>
+        <p>Lead the delivery of a NSW high-speed rail corridor while balancing time, cost, risk, and public acceptance.</p>
+        <button id="btn-start">Start New Project</button>
+      </div>
+    </section>
+
+    <section id="screen-stream" class="screen">
+      <div class="panel">
+        <h2>Select Your Stream</h2>
+        <div id="stream-options" class="card-grid"></div>
+        <button id="btn-confirm-stream" disabled>Confirm Stream</button>
+      </div>
+    </section>
+
+    <section id="screen-recruitment" class="screen">
+      <div class="panel">
+        <h2>Recruitment Window</h2>
+        <p id="recruitment-subtitle"></p>
+        <div id="candidate-pool" class="card-grid"></div>
+        <div class="row between">
+          <div id="team-summary"></div>
+          <button id="btn-finish-recruitment">Continue to Planning</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-planning" class="screen">
+      <div class="layout-grid">
+        <aside class="panel sticky">
+          <h3>Task Bank</h3>
+          <div id="task-bank" class="task-bank"></div>
+        </aside>
+
+        <section class="panel planning-main" data-bg="assets/placeholders/backgrounds/planning_room_bg.svg">
+          <h3>Planning Board</h3>
+          <div class="dashboard-row">
+            <div id="budget-panel" class="mini-panel"></div>
+            <div id="team-panel" class="mini-panel"></div>
+            <div id="critical-panel" class="mini-panel"></div>
+          </div>
+          <div id="warning-box" class="warning-box"></div>
+          <div id="timeline-grid" class="timeline-grid"></div>
+          <div class="row between">
+            <div id="float-explainer" class="info-note"></div>
+            <button id="btn-next-quarter">Next Quarter</button>
+          </div>
+          <div class="map-board" data-bg="assets/placeholders/maps/route_board_base.svg">
+            <h4>Route Progress: Sydney → Wollongong</h4>
+            <div class="route-track">
+              <div id="route-progress" class="route-progress"></div>
+            </div>
+            <p id="route-progress-text"></p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="screen-final" class="screen">
+      <div class="panel">
+        <h2>Final Results</h2>
+        <div id="final-results"></div>
+        <button id="btn-restart">Return to Main Menu</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="event-modal" class="modal hidden">
+    <div class="panel">
+      <h3>Quarter Event</h3>
+      <p id="event-title"></p>
+      <p id="event-description"></p>
+      <p id="event-impact"></p>
+      <button id="btn-event-ok">Continue</button>
+    </div>
+  </div>
+
+  <div id="review-modal" class="modal hidden">
+    <div class="panel">
+      <h3>Quarter Review</h3>
+      <div id="review-content"></div>
+      <button id="btn-review-ok">Back to Planning</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

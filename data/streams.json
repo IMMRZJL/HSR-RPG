@@ -1,0 +1,42 @@
+[
+  {
+    "id": "geotechnical",
+    "name": "Geotechnical",
+    "description": "Strong on ground risk identification and early subsurface strategy.",
+    "recruitment_bias": { "discipline": "Geotechnical", "morale_bias": 1, "risk_bias": -4, "public_bias": -1 },
+    "starting_bonus": "Lower initial risk index and better geotechnical recruitment odds.",
+    "starting_penalty": "Slightly lower initial public approval due to technical-first focus."
+  },
+  {
+    "id": "structural",
+    "name": "Structural",
+    "description": "Strong on design quality, constructability, and integrity assurance.",
+    "recruitment_bias": { "discipline": "Structural", "morale_bias": 0, "risk_bias": -2, "public_bias": 0 },
+    "starting_bonus": "Improved outcomes on bridge and station packages.",
+    "starting_penalty": "Less flexibility on early social planning tasks."
+  },
+  {
+    "id": "transport",
+    "name": "Transport",
+    "description": "Strong systems view across operations, rail interfaces, and integration.",
+    "recruitment_bias": { "discipline": "Transport", "morale_bias": 0, "risk_bias": -1, "public_bias": 1 },
+    "starting_bonus": "Better systems integration and trial operations readiness.",
+    "starting_penalty": "Higher sensitivity to late civil design changes."
+  },
+  {
+    "id": "construction-pm",
+    "name": "Construction / Project Management",
+    "description": "Strong on delivery control, sequencing discipline, and cost governance.",
+    "recruitment_bias": { "discipline": "Project Management", "morale_bias": 2, "risk_bias": -1, "public_bias": 0 },
+    "starting_bonus": "Improved staffing morale and cost-control candidate odds.",
+    "starting_penalty": "Slight early planning blind spot in environmental detail."
+  },
+  {
+    "id": "environmental-planning",
+    "name": "Environmental / Planning",
+    "description": "Strong on approvals, heritage, and community-facing delivery.",
+    "recruitment_bias": { "discipline": "Environmental", "morale_bias": 0, "risk_bias": 0, "public_bias": 4 },
+    "starting_bonus": "Higher initial public approval and planning talent bias.",
+    "starting_penalty": "Slightly higher early engineering risk exposure."
+  }
+]
